@@ -1,0 +1,79 @@
+body {
+    font-family: 'Indie Flower', cursive;
+    background-color: black;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#game-container {
+    position: relative;
+    width: 800px;
+    height: 600px;
+    border: 5px solid #333;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.scene {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+}
+
+.character {
+    width: 150px;
+    height: 300px;
+    background: no-repeat center center/contain;
+    position: absolute;
+    bottom: 50px;
+    display: none;
+}
+
+#character1 {
+    left: 50px;
+    background-image: url('images/afro_sam-removebg-preview.png'); /* Path to the first character image */
+}
+
+#character2 {
+    right: 50px;
+    background-image: url('images/image_2024-07-27_153355334-removebg-preview\ \(1\).png'); /* Path to the second character image */
+}
+
+#character3 {
+    right: 50px;
+    background-image: url('images/449847002_2164842303881718_8014652010353572448_n-removebg-preview.png'); /* Path to the third character image */
+}
+
+#character4 {
+    right: 50px;
+    background-image: url('images/image_2024-07-27_174343853-removebg-preview.png'); /* Path to the fourth character image */
+}
+
+.dialogue-box {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 1.2em;
+    display: none;
+}
+
+audio {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
